@@ -23,11 +23,11 @@
     if (localStorageTheme === 'customLight') {
       document.body.style.backgroundColor = '#FFD4EB';
     }
-    // load appropriate module based on pathname
-    var pathname = window.location.pathname;
-    pathname = pathname === '/' ? '/index' : pathname;
-    document.write('<script type="module" src="/src/pages' + pathname + '/main.js"><\/script>');
   </script>
+  <script type="module" src="/src/pages/index/main.js"></script>
+  <script type="module" src="/src/pages/about/main.js"></script>
+  <script type="module" src="/src/pages/projects/main.js"></script>
+  <script type="module" src="/src/pages/speedrunning/main.js"></script>
 </body>
 
 </html>

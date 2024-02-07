@@ -13,8 +13,11 @@ import App from './App.vue'
 // Composables
 import { createApp } from 'vue'
 
-const app = createApp(App)
+// import is forced, mount based on pathname
+if (window.location.pathname === '/') {
+  const app = createApp(App)
 
-registerPlugins(app)
+  registerPlugins(app)
 
-app.mount('#app')
+  app.mount('#app')
+}
