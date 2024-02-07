@@ -13,6 +13,9 @@ import App from './App.vue'
 // Composables
 import { createApp } from 'vue'
 
+// change document title
+document.title = 'Gaphodil | Projects'
+
 const app = createApp(App)
 
 registerPlugins(app)

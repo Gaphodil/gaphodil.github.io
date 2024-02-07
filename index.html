@@ -7,11 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark">
   <title>Gaphodil</title>
+  <style type="text/css">
+    body {
+      background-color: #1A0410;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app"></div>
-  <script type="module" src="/src/pages/index/main.js"></script>
+  <script>
+    // change document background based on localStorage before mounting
+    // dark is default
+    const localStorageTheme = localStorage.getItem('theme');
+    if (localStorageTheme === 'customLight') {
+      document.body.style.backgroundColor = '#FFD4EB';
+    }
+    // load appropriate module based on pathname
+    var pathname = window.location.pathname;
+    pathname = pathname === '/' ? '/index' : pathname;
+    document.write('<script type="module" src="/src/pages' + pathname + '/main.js"><\/script>');
+  </script>
 </body>
 
 </html>
