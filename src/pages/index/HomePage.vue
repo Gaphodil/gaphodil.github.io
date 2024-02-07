@@ -14,10 +14,12 @@
         class="d-flex justify-center"
       >
         <v-btn-group
+          :theme="$vuetify.theme.current.dark ? 'customLight' : 'customDark'"
           divided
           border
         >
           <v-btn
+            class="bg-background"
             target="_blank"
             aria-label="Twitch"
             title="Twitch"
@@ -25,6 +27,7 @@
             href="https://twitch.tv/gaphodil"
           />
           <v-btn
+            class="bg-background"
             target="_blank"
             aria-label="Youtube"
             title="Youtube"
@@ -32,6 +35,7 @@
             href="https://youtube.com/@gaphodil"
           />
           <v-btn
+            class="bg-background"
             target="_blank"
             aria-label="GitHub"
             title="GitHub"
@@ -39,6 +43,7 @@
             href="https://github.com/gaphodil"
           />
           <v-btn
+            class="bg-background"
             target="_blank"
             aria-label="Cohost"
             title="Cohost"
@@ -46,6 +51,7 @@
             href="https://cohost.org/gaph"
           />
           <v-btn
+            class="bg-background"
             target="_blank"
             aria-label="Twitter"
             title="Twitter"

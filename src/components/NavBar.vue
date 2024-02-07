@@ -5,47 +5,78 @@
       justify="center"
       justify-sm="start"
     >
-      <NavBarItem>
-        <v-btn
-          flat
-          :href="tabUrls[0]"
-          :variant="tab === tabUrls[0] ? 'outlined' : 'text'"
-          prepend-icon="mdi-home"
+      <v-col
+        :class="$vuetify.display.mobile ? 'd-flex justify-center' : ''"
+        :style="$vuetify.display.mobile ? 'padding: 0px' : ''"
+      >
+        <v-btn-toggle
+          divided
+          :theme="$vuetify.theme.current.dark ? 'customLight' : 'customDark'"
         >
-          Home
-        </v-btn>
-      </NavBarItem>
-      <NavBarItem>
-        <v-btn
-          flat
-          :href="tabUrls[1]"
-          :variant="tab === tabUrls[1] ? 'outlined' : 'text'"
-          prepend-icon="mdi-information"
+          <v-btn
+            :href="tabUrls[0]"
+            prepend-icon="mdi-home"
+            class="text-none"
+            :class="tab == tabUrls[0] ? 'bg-primary' : 'bg-background'"
+          >
+            Home
+          </v-btn>
+          <v-btn
+            :href="tabUrls[1]"
+            prepend-icon="mdi-information"
+            class="text-none"
+            :class="tab == tabUrls[1] ? 'bg-primary' : 'bg-background'"
+          >
+            About
+          </v-btn>
+          <v-btn
+            v-if="!$vuetify.display.mobile"
+            :href="tabUrls[2]"
+            prepend-icon="mdi-folder"
+            class="text-none"
+            :class="tab == tabUrls[2] ? 'bg-primary' : 'bg-background'"
+          >
+            Projects
+          </v-btn>
+          <v-btn
+            v-if="!$vuetify.display.mobile"
+            :href="tabUrls[3]"
+            prepend-icon="mdi-speedometer"
+            class="text-none"
+            :class="tab == tabUrls[3] ? 'bg-primary' : 'bg-background'"
+          >
+            Speedrunning
+          </v-btn>
+        </v-btn-toggle>
+      </v-col>
+      <v-col 
+        v-if="$vuetify.display.mobile"
+        class="d-flex justify-center"
+        style="padding: 0px"
+      >
+        <v-btn-toggle
+          divided
+          :theme="$vuetify.theme.current.dark ? 'customLight' : 'customDark'"
         >
-          About
-        </v-btn>
-      </NavBarItem>
-      <NavBarItem>
-        <v-btn
-          flat
-          :href="tabUrls[2]"
-          :variant="tab === tabUrls[2] ? 'outlined' : 'text'"
-          prepend-icon="mdi-folder"
-        >
-          Projects
-        </v-btn>
-      </NavBarItem>
-      <NavBarItem>
-        <v-btn
-          flat
-          :href="tabUrls[3]"
-          :variant="tab === tabUrls[3] ? 'outlined' : 'text'"
-          prepend-icon="mdi-speedometer"
-        >
-          Speedrunning
-        </v-btn>
-      </NavBarItem>
-      <v-spacer />
+          <v-btn
+            :href="tabUrls[2]"
+            prepend-icon="mdi-folder"
+            class="text-none"
+            :class="tab == tabUrls[2] ? 'bg-primary' : 'bg-background'"
+          >
+            Projects
+          </v-btn>
+          <v-btn
+            :href="tabUrls[3]"
+            prepend-icon="mdi-speedometer"
+            class="text-none"
+            :class="tab == tabUrls[3] ? 'bg-primary' : 'bg-background'"
+          >
+            Speedrunning
+          </v-btn>
+        </v-btn-toggle>
+      </v-col>
+      <v-spacer v-if="!$vuetify.display.mobile" />
       <v-col
         cols="12"
         sm="1"
@@ -56,6 +87,7 @@
           style="justify-self: center;"
           aria-label="Change Theme"
           title="Change Theme"
+          class="bg-primary"
           :icon="$vuetify.theme.current.dark ? 'mdi-weather-night' : 'mdi-weather-sunny'"
           @click="toggleTheme"
         />
@@ -78,22 +110,22 @@ else {
   // grab system theme from window.matchMedia
   if (window.matchMedia) {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      theme.global.name.value = 'dark'
+      theme.global.name.value = 'customDark'
     }
     else {
-      theme.global.name.value = 'light'
+      theme.global.name.value = 'customLight'
     }
   }
   // if browser too old, default to dark
   else {
-    theme.global.name.value = 'dark'
+    theme.global.name.value = 'customDark'
   }
   // write to localStorage
   localStorage.setItem('theme', theme.global.name.value)
 }
 
 function toggleTheme () {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  theme.global.name.value = theme.global.current.value.dark ? 'customLight' : 'customDark'
   localStorage.setItem('theme', theme.global.name.value)
 }
 </script>
@@ -106,7 +138,7 @@ export default {
   data() {
     return {
       tab: activePage,
-      tabUrls: tabUrls
+      tabUrls: tabUrls,
     }
   }
 }
