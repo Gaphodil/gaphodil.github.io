@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <SiteHeader />
+      <v-container>
+        <SiteHeader />
+      </v-container>
       <v-container>
         <NavBar />
         <AboutPage />
