@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+  <link rel="preload" as="font" type="font/eot" href="/assets/materialdesignicons-webfont-7bVAAaOD.eot" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/materialdesignicons-webfont-mAzCtZMY.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/woff" href="/assets/materialdesignicons-webfont-oAsxmy5Q.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/ttf" href="/assets/materialdesignicons-webfont-95AM5e9U.ttf" crossorigin="anonymous">
+
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Gaphodil</title>
+  <style type="text/css">
+    body {
+      background-color: #1A0410;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-BWLP16qk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-QdrMyoQX.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    // change document background based on localStorage before mounting
+    // dark is default
+    const localStorageTheme = localStorage.getItem('theme');
+    if (localStorageTheme === 'customLight') {
+      document.body.style.backgroundColor = '#FFD4EB';
+    }
+  </script>
+</body>
+
+</html>
