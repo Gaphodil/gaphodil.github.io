@@ -9,7 +9,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/projects/stardew-better-jukebox.png"
+            src="@/assets/projects/stardew-better-jukebox.webp"
             alt="A screenshot of a user interface from Stardew Valley.
             It is titled 'Jukebox' and displays a variety of songs to choose from."
           />
@@ -40,7 +40,7 @@
       <ImageTextItem simple-title="Jubilee - Practice Mod">
         <template #image>
           <v-img
-            src="@/assets/projects/jubilee-practice-mod.png"
+            src="@/assets/projects/jubilee-practice-mod.webp"
             alt="A screenshot of Jubilee. The main character is mid-jump.
             On the left side, a number of technical details about
             the game's current state are displayed."

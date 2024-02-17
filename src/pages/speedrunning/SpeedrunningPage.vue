@@ -13,7 +13,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/ophidia.png"
+            src="@/assets/speedrunning/ophidia.webp"
             alt="A screenshot of Ophidia, from its store page. A snake is circling an enemy."
           />
         </template>
@@ -42,7 +42,7 @@
       <ImageTextItem simple-title="Banana Nababa">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/banana-nababa.png"
+            src="@/assets/speedrunning/banana-nababa.webp"
             alt="A screenshot of Banana Nababa, from Indie Overlook. The player character is throwing an axe."
           />
         </template>
@@ -67,7 +67,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/cotsg.jpg"
+            src="@/assets/speedrunning/cotsg.webp"
             alt="A screenshot of Cast of the Seven Godsends, from its Steam page."
           />
         </template>
@@ -87,7 +87,7 @@
       <ImageTextItem simple-title="Abuse (DOS) (modern sourceport)">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/abuse-game.png"
+            src="@/assets/speedrunning/abuse-game.webp"
             alt="A screenshot of Abuse's first level.
           The player character is firing a laser rifle at a flying enemy."
           />
@@ -112,7 +112,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/coinstack.png"
+            src="@/assets/speedrunning/coinstack.webp"
             alt="A screenshot of level 13 of Coinstack 1000, from Delicious Fruit.
             The Kid faces many coins above deadly spikes and sawblades."
           />
@@ -134,7 +134,7 @@
       <ImageTextItem simple-title="I Wanna Save the Ship">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/save-the-ship.png"
+            src="@/assets/speedrunning/save-the-ship.webp"
             alt="A screenshot of Save the Ship, from Delicious Fruit. The tiling is Mega-Man themed."
           />
         </template>
@@ -159,7 +159,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/heavenly-host.png"
+            src="@/assets/speedrunning/heavenly-host.webp"
             alt="A screenshot of Heavenly Host, from Delicious Fruit.
           There are a smorgasbord of unique interactables, and the player's inventory is shown in the top left."
           />
@@ -183,7 +183,7 @@
       <ImageTextItem simple-title="Demon Burst">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/demon-burst.png"
+            src="@/assets/speedrunning/demon-burst.webp"
             alt="A screenshot of Demon Burst.
           The player character is throwing an axe at a skeleton."
           />
@@ -209,7 +209,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/mmv4.png"
+            src="@/assets/speedrunning/mmv4.webp"
             alt="A screenshot of MiniMetroidvania 4, from Delicious Fruit.
             A grassy area is covered in spikes and deadly fruit."
           />
@@ -231,7 +231,7 @@
       <ImageTextItem simple-title="Sealed Bite (GameJam)">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/sealed-bite.png"
+            src="@/assets/speedrunning/sealed-bite.webp"
             alt="A screenshot of Sealed Bite, from the Itch page.
           The player character stands in an autumn-esque forest."
           />
@@ -257,7 +257,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/skelemania.png" 
+            src="@/assets/speedrunning/skelemania.webp" 
             alt="A screenshot of Skelemania, from the Itch page.
             The skeletal player character stands in a room with greenery and spiders."
           />
@@ -278,7 +278,7 @@
       <ImageTextItem simple-title="Stop the Simulation">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/stop-the-simulation.png"
+            src="@/assets/speedrunning/stop-the-simulation.webp"
             alt="A screenshot of Stop the Simulation, from Delicious Fruit.
             The area is inspired by Baba is You."
           />
@@ -305,7 +305,7 @@
       >
         <template #image>
           <v-img
-            src="@/assets/speedrunning/jubilee.jpg"
+            src="@/assets/speedrunning/jubilee.webp"
             alt="A screenshot of Jubilee, from the Steam page.
           The player character faces a deadly fish in a marshy area."
           />
@@ -328,7 +328,7 @@
       <ImageTextItem simple-title="BONK: An Interactive Exposition">
         <template #image>
           <v-img
-            src="@/assets/speedrunning/bonk.png"
+            src="@/assets/speedrunning/bonk.webp"
             alt="A screenshot of BONK, from Delicious Fruit. The kid is submersed in slime."
           />
         </template>
