@@ -5,8 +5,8 @@
         <h2>Hi!</h2>
         <p>
           I'm <b>Gaphodil</b> (rhymes with daffodil). I'm a queer woman (she/her) who
-          plays video games and occassionally streams doing it.
-          Sometimes I code very small things for fun.
+          plays video games, sometimes fast, and occassionally livestreams it.
+          Sometimes I code projects in my free time.
         </p>
       </v-col>
       <v-col
