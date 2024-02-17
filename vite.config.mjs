@@ -44,4 +44,15 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  // https://vitejs.dev/guide/build.html#multi-page-app
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        about: './about.html',
+        projects: './projects.html',
+        speedrunning: './speedrunning.html',
+      },
+    }
+  },
 })
