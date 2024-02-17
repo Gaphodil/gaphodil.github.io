@@ -15,4 +15,7 @@
 <script setup>
 import SpeedrunningPage from "./SpeedrunningPage.vue";
 </script>
-  
+
+<style>
+@import '@/assets/styles/main.css';
+</style>

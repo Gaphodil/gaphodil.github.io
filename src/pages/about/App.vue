@@ -15,4 +15,7 @@
 <script setup>
 import AboutPage from "./AboutPage.vue";
 </script>
-  
+
+<style>
+@import '@/assets/styles/main.css';
+</style>

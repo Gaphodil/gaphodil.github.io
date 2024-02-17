@@ -13,6 +13,9 @@
 </template>
   
 <script setup>
-  import HomePage from "./HomePage.vue";
+import HomePage from "./HomePage.vue";
 </script>
-  
+
+<style>
+@import '@/assets/styles/main.css';
+</style>

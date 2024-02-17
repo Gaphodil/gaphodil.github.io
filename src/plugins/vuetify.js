@@ -21,6 +21,8 @@ const customDark = {
     'on-background': '#FFD4EB',
     primary: '#FFD4EB',
     'on-primary': '#1A0410',
+    'a-link': '#D4FBFF',
+    'a-visited': '#999263',
   }
 };
 const customLight = {
@@ -32,6 +34,8 @@ const customLight = {
     'on-background': '#1A0410',
     primary: '#1A0410',
     'on-primary': '#FFD4EB',
+    'a-link': '#1E616B',
+    'a-visited': '#80773C',
   }
 };
 

@@ -15,4 +15,7 @@
 <script setup>
 import ProjectsPage from "./ProjectsPage.vue";
 </script>
-  
+
+<style>
+@import '@/assets/styles/main.css';
+</style>
