@@ -1,11 +1,26 @@
 <template>
   <v-container>
-    <h2>Projects</h2>
-    <p>These are a handful of small projects I've created on my own time.</p>
-    <v-container>
+    <v-row>
+      <v-col>
+        <h2>Projects</h2>
+        <p>These are a handful of small projects I've created on my own time.</p>
+      </v-col>
+      <v-col cols="1">
+        <v-btn
+          style="justify-self: center;"
+          aria-label="Change Sort"
+          title="Change Sort"
+          class="bg-primary"
+          :icon="reversed ? 'mdi-sort-descending' : 'mdi-sort-ascending'"
+          @click="reverseOrder"
+        />
+      </v-col>
+    </v-row>
+    <v-row>
       <ImageTextItem
-        :img-left="true"
         simple-title="Stardew Valley - Better Jukebox Mod"
+        :order="itemOrders[0]"
+        :img-left="itemOrders[0] % 2 === 0"
       >
         <template #image>
           <v-img
@@ -28,7 +43,11 @@
         </template>
       </ImageTextItem>
 
-      <ImageTextItem simple-title="Jubilee - Practice Mod">
+      <ImageTextItem
+        simple-title="Jubilee - Practice Mod"
+        :order="itemOrders[1]"
+        :img-left="itemOrders[1] % 2 === 0"
+      >
         <template #image>
           <v-img
             src="@/assets/projects/jubilee-practice-mod.webp"
@@ -57,8 +76,9 @@
       </ImageTextItem>
 
       <ImageTextItem
-        :img-left="true"
         simple-title="A Bunch Of Autosplitters"
+        :order="itemOrders[2]"
+        :img-left="itemOrders[2] % 2 === 0"
       >
         <template #image>
           <v-row
@@ -92,16 +112,30 @@
           </p>
         </template>
       </ImageTextItem>
-    </v-container>
+    </v-row>
   </v-container>
 </template>
 
 <script>
+import { reactive, ref } from 'vue';
+
+const numEntries = 3;
+var itemOrders = reactive([...Array(numEntries).keys()]);
+var reversed = ref(false);
+
+function reverseOrder() {
+  itemOrders.reverse();
+  reversed.value = !reversed.value;
+}
+
 export default {
   data() {
     return {
       autosplitterText: "A functionality of the program LiveSplit to recognize when a program \
-        is being run and automatically 'split' when certain conditions are met"
+        is being run and automatically 'split' when certain conditions are met",
+      itemOrders: itemOrders,
+      reversed: reversed,
+      reverseOrder: reverseOrder,
     }
   }
 }
