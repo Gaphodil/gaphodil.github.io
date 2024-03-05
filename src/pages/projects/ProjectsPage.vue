@@ -112,6 +112,29 @@
           </p>
         </template>
       </ImageTextItem>
+
+      <ImageTextItem
+        simple-title="This Website"
+        :order="itemOrders[3]"
+        :img-left="itemOrders[3] % 2 === 0"
+      >
+        <template #image>
+          <v-row
+            align-self="stretch"
+            class="align-center justify-center"
+          >
+            <v-col cols="auto">
+              <v-icon icon="mdi-camera-off" />
+            </v-col>
+          </v-row>
+        </template>
+        <template #content>
+          <p><i>Jan 2024 - Present | Vuetify, Vue.js</i></p>
+          <p>
+            You're looking at it!
+          </p>
+        </template>
+      </ImageTextItem>
     </v-row>
   </v-container>
 </template>
@@ -119,7 +142,7 @@
 <script>
 import { reactive, ref } from 'vue';
 
-const numEntries = 3;
+const numEntries = 4;
 var itemOrders = reactive([...Array(numEntries).keys()]);
 var reversed = ref(false);
 
