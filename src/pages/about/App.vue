@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <v-container>
+      <v-container :class="$vuetify.display.lgAndUp ? 'w-75' : ''">
         <SiteHeader />
       </v-container>
-      <v-container>
+      <v-container :class="$vuetify.display.lgAndUp ? 'w-75' : ''">
         <NavBar />
         <AboutPage />
       </v-container>
