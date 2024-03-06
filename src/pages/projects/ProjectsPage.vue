@@ -1,11 +1,23 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
+    <v-row
+      justify="center"
+      justify-sm="end"
+    >
+      <v-col cols="12">
         <h2>Projects</h2>
         <p>These are a handful of small projects I've created on my own time.</p>
       </v-col>
-      <v-col cols="1">
+      <v-col
+        cols="auto"
+        align-self="center"
+      >
+        <p>Sorted by: {{ reversed ? 'Reverse-Chronological' : 'Chronological' }}</p>
+      </v-col>
+      <v-col
+        cols="auto"
+        align-self="end"
+      >
         <v-btn
           style="justify-self: center;"
           aria-label="Change Sort"

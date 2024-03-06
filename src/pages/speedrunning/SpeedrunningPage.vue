@@ -1,7 +1,10 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
+    <v-row
+      justify="center"
+      justify-sm="end"
+    >
+      <v-col cols="12">
         <h2>Speedrunning</h2>
         <p>
           I've speedrun <a href="https://www.speedrun.com/users/Gaphodil">a lot of games</a>!
@@ -10,7 +13,16 @@
           Others I've only ever run once or twice, despite my efforts.
         </p>
       </v-col>
-      <v-col cols="1">
+      <v-col
+        cols="auto"
+        align-self="center"
+      >
+        <p>Sorted by: {{ reversed ? 'Reverse-Chronological' : 'Chronological' }}</p>
+      </v-col>
+      <v-col
+        cols="auto"
+        align-self="end"
+      >
         <v-btn
           style="justify-self: center;"
           aria-label="Change Sort"
