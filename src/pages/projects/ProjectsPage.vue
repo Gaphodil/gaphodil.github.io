@@ -42,7 +42,7 @@
           />
         </template>
         <template #content>
-          <p><i>May 2020 - Dec 2023 | C#</i></p>
+          <p><i>May 2020 - Apr 2024 | C#</i></p>
           <p><a href="https://github.com/Gaphodil/BetterJukebox">GitHub</a></p>
           <p>
             The jukebox item in <a href="https://store.steampowered.com/app/413150">Stardew Valley</a>
@@ -117,6 +117,7 @@
             <InlineTooltip
               :margin="false"
               :text="autosplitterText"
+              aria-hidden="true"
             />
             for use Gamemaker Studio as their engine, which
             coincidentally stores its global variables in an incredibly clear way and makes it
@@ -147,6 +148,41 @@
           </p>
         </template>
       </ImageTextItem>
+
+      <ImageTextItem
+        simple-title="IWBTG Godot Project Template Fork"
+        :order="itemOrders[4]"
+        :img-left="itemOrders[4] % 2 === 0"
+      >
+        <template #image>
+          <v-row
+            align-self="stretch"
+            class="align-center justify-center"
+          >
+            <v-col cols="auto">
+              <v-icon icon="mdi-camera-off" />
+            </v-col>
+          </v-row>
+        </template>
+        <template #content>
+          <p><i>Mar 2024 - Present | Godot, GDScript</i></p>
+          <p>
+            <a href="https://github.com/Gaphodil/ReloadedK-Engine-Gaph-Fork">GitHub</a> |
+            <a href="https://github.com/ReloadedK-git/ReloadedKs-Godot-Fangame-Engine">Original</a>
+          </p>
+          <p>
+            I decided to start experimenting with some IWBTG fangame ideas I'd had,
+            and since they weren't easily feasible to implement outside of Godot, I started
+            with the most complete community engine currently available. As I learned more
+            about GDScript over the course of the month, I started implementing non-specific
+            changes that I felt could be immediately useful to others, and so created a fork to
+            mirror my additions without needing to open-source my own project before it's ready
+            for release. The largest addition was the overhaul to the in-game settings system,
+            with algorithmic menu generation and an API to simplify the getting and, well,
+            "setting" of settings, as well as the saving and loading.
+          </p>
+        </template>
+      </ImageTextItem>
     </v-row>
   </v-container>
 </template>
@@ -154,7 +190,7 @@
 <script>
 import { reactive, ref } from 'vue';
 
-const numEntries = 4;
+const numEntries = 6;
 var itemOrders = reactive([...Array(numEntries).keys()]);
 var reversed = ref(false);
 

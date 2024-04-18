@@ -79,7 +79,10 @@
             <template #content>
               <p>
                 <i>May - Jun 2020 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p>
                 <a href="https://archive.org/details/BananaNababa">Game</a> | 
@@ -108,7 +111,10 @@
             <template #content>
               <p>
                 <i>Jul 2020 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p><a href="https://store.steampowered.com/app/373360">Game</a></p>
               <p>
@@ -136,7 +142,10 @@
             <template #content>
               <p>
                 <i>Aug 2020 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p>
                 <a href="https://github.com/antrad/Abuse_1996">Game</a> | 
@@ -223,7 +232,10 @@
             <template #content>
               <p>
                 <i>Dec 2021 - Jul 2022 | I Wanna Tourney</i>
-                <InlineTooltip :text="tourneyText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="tourneyText"
+                />
               </p>
               <p>
                 <a href="https://delicious-fruit.com/ratings/game_details.php?id=23932">Game</a> |
@@ -254,7 +266,10 @@
             <template #content>
               <p>
                 <i>Jan 2022 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p>
                 <a href="https://crowno.itch.io/demon-burst">Game</a> |
@@ -284,7 +299,10 @@
             <template #content>
               <p>
                 <i>Feb 2022 | I Wanna Tourney</i>
-                <InlineTooltip :text="tourneyText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="tourneyText"
+                />
               </p>
               <p>
                 <a href="https://delicious-fruit.com/ratings/game_details.php?id=24396">Game</a> |
@@ -313,7 +331,10 @@
             <template #content>
               <p>
                 <i>Feb 2022 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p>
                 <a href="https://securas.itch.io/sealedbite-gamejamversion">Game</a> |
@@ -343,7 +364,10 @@
             <template #content>
               <p>
                 <i>Mar 2022 | Speedbump</i>
-                <InlineTooltip :text="speedbumpText" />
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="speedbumpText"
+                />
               </p>
               <p><a href="https://benal.itch.io/skelemania">Game</a></p>
               <p>
@@ -439,8 +463,11 @@
                 including with the developer, who was kind enough to add tweaks and shift things around to
                 keep the run flowing in an interesting way. I even raced it during
                 <a href="https://youtu.be/OHI5-6Io2qg">Fangame Marathon 2023</a>
-                <InlineTooltip :text="marathonText" />! The game's casual experience
-                also provides an incredible sense of exploration with its secrets.
+                <InlineTooltip
+                  aria-hidden="true"
+                  :text="marathonText"
+                />!
+                The game's casual experiencealso provides an incredible sense of exploration with its secrets.
               </p>
             </template>
           </ImageTextItem>
