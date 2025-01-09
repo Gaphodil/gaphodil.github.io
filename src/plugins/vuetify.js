@@ -10,6 +10,8 @@ import "vuetify/styles";
 
 // Composables
 import { createVuetify } from "vuetify";
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import { fa } from 'vuetify/iconsets/fa-svg'
 import CohostSVG from "@/components/CohostSVG.vue";
 
 // https://vuetifyjs.com/en/features/theme/
@@ -61,7 +63,11 @@ export default createVuetify({
     }
   },
   icons: {
+    defaultSet: "mdi",
+    aliases,
     sets: {
+      fa,
+      mdi,
       cohost: {
         component: CohostSVG,
       },

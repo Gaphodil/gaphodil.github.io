@@ -45,10 +45,26 @@
           <v-btn
             class="bg-background"
             target="_blank"
+            aria-label="Itch"
+            title="Itch"
+            icon="fa:fab fa-itch-io"
+            href="https://gaphodil.itch.io"
+          />
+          <v-btn
+            class="bg-background"
+            target="_blank"
             aria-label="Cohost"
             title="Cohost"
             icon="cohost:"
             href="https://cohost.org/gaph"
+          />
+          <v-btn
+            class="bg-background"
+            target="_blank"
+            aria-label="Bluesky"
+            title="Bluesky"
+            icon="fa:fab fa-bluesky"
+            href="https://bsky.app/profile/did:plc:npicerqpkuwpuzggz6tvu2gq"
           />
           <v-btn
             class="bg-background"
