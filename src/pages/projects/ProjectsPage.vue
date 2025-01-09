@@ -92,16 +92,6 @@
         :order="itemOrders[2]"
         :img-left="itemOrders[2] % 2 === 0"
       >
-        <template #image>
-          <v-row
-            align-self="stretch"
-            class="align-center justify-center"
-          >
-            <v-col cols="auto">
-              <v-icon icon="mdi-camera-off" />
-            </v-col>
-          </v-row>
-        </template>
         <template #content>
           <p><i>Various | Auto Splitting Language (C#)</i></p>
           <p>
@@ -131,16 +121,6 @@
         :order="itemOrders[3]"
         :img-left="itemOrders[3] % 2 === 0"
       >
-        <template #image>
-          <v-row
-            align-self="stretch"
-            class="align-center justify-center"
-          >
-            <v-col cols="auto">
-              <v-icon icon="mdi-camera-off" />
-            </v-col>
-          </v-row>
-        </template>
         <template #content>
           <p><i>Jan 2024 - Present | Vuetify, Vue.js</i></p>
           <p>
@@ -154,18 +134,8 @@
         :order="itemOrders[4]"
         :img-left="itemOrders[4] % 2 === 0"
       >
-        <template #image>
-          <v-row
-            align-self="stretch"
-            class="align-center justify-center"
-          >
-            <v-col cols="auto">
-              <v-icon icon="mdi-camera-off" />
-            </v-col>
-          </v-row>
-        </template>
         <template #content>
-          <p><i>Mar 2024 - Present | Godot, GDScript</i></p>
+          <p><i>Mar 2024 - May 2024 | Godot, GDScript</i></p>
           <p>
             <a href="https://github.com/Gaphodil/ReloadedK-Engine-Gaph-Fork">GitHub</a> |
             <a href="https://github.com/ReloadedK-git/ReloadedKs-Godot-Fangame-Engine">Original</a>
