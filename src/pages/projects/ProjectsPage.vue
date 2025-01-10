@@ -39,6 +39,8 @@
           <ProjectEntry2 :raw-order="itemOrders[2]" />
           <ProjectEntry3 :raw-order="itemOrders[3]" />
           <ProjectEntry4 :raw-order="itemOrders[4]" />
+          <ProjectEntry5 :raw-order="itemOrders[5]" />
+          <ProjectEntry6 :raw-order="itemOrders[6]" />
         </v-row>
       </v-col>
     </v-row>
@@ -51,13 +53,15 @@ import ProjectEntry1 from "./entries/ProjectEntry1.vue";
 import ProjectEntry2 from "./entries/ProjectEntry2.vue";
 import ProjectEntry3 from "./entries/ProjectEntry3.vue";
 import ProjectEntry4 from "./entries/ProjectEntry4.vue";
+import ProjectEntry5 from "./entries/ProjectEntry5.vue";
+import ProjectEntry6 from "./entries/ProjectEntry6.vue";
 </script>
 
 <script>
 import { reactive, ref } from 'vue';
 
 // will require additional lists to support above 12
-const numEntries = 5;
+const numEntries = 7;
 // start from 1
 const itemOrders = reactive(
   Array.from({ length: numEntries }, (_, i) => i+1)
