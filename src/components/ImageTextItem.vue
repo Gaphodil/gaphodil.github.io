@@ -1,12 +1,14 @@
 <template>
-  <v-col cols="12">
+  <v-col
+    cols="12"
+    :order="order"
+  >
     <v-row>
       <v-col
         class="align-center justify-center"
         cols="12"
         sm="6"
-        order="0"
-        :order-sm="imgLeft ? '0' : '2'"
+        :order-sm="imgLeft ? '1' : '3'"
       >
         <slot name="image">
           <v-row
@@ -23,7 +25,7 @@
         cols="12"
         sm="6"
         :class="$vuetify.display.mobile ? 'text-center' : (imgLeft ? 'text-left' : 'text-right')"
-        order="1"
+        order="2"
       >
         <h3>
           <slot
@@ -40,15 +42,22 @@
   </v-col>
 </template>
 
-<script setup>
-defineProps({
-  imgLeft: {
-    type: Boolean,
-    default: false
+<script>
+export default {
+  props: {
+    simpleTitle: {
+      type: String,
+      default: ""
+    },
+    order: {
+      type: Number,
+      default: 0
+    }
   },
-  simpleTitle: {
-    type: String,
-    default: ""
+  computed: {
+    imgLeft() {
+      return this.order % 2 === 0
+    }
   }
-});
+}
 </script>
