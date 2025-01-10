@@ -56,7 +56,6 @@ export default {
   },
   computed: {
     compOrder() {
-      console.log(Math.abs(this.rawOrder));
       return Math.abs(this.rawOrder);
     },
     imgLeft() {
