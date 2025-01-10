@@ -34,11 +34,11 @@
         order="1"
       >
         <v-row>
-          <ProjectEntry0 :order="itemOrders[0]" />
-          <ProjectEntry1 :order="itemOrders[1]" />
-          <ProjectEntry2 :order="itemOrders[2]" />
-          <ProjectEntry3 :order="itemOrders[3]" />
-          <ProjectEntry4 :order="itemOrders[4]" />
+          <ProjectEntry0 :raw-order="itemOrders[0]" />
+          <ProjectEntry1 :raw-order="itemOrders[1]" />
+          <ProjectEntry2 :raw-order="itemOrders[2]" />
+          <ProjectEntry3 :raw-order="itemOrders[3]" />
+          <ProjectEntry4 :raw-order="itemOrders[4]" />
         </v-row>
       </v-col>
     </v-row>
@@ -59,7 +59,7 @@ import { reactive, ref } from 'vue';
 // will require additional lists to support above 12
 const numEntries = 5;
 // start from 1
-var itemOrders = reactive(
+const itemOrders = reactive(
   Array.from({ length: numEntries }, (_, i) => i+1)
 );
 var reversed = ref(false);

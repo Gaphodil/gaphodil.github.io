@@ -1,7 +1,7 @@
 <template>
   <v-col
     cols="12"
-    :order="order"
+    :order="compOrder"
   >
     <v-row>
       <v-col
@@ -49,15 +49,20 @@ export default {
       type: String,
       default: ""
     },
-    order: {
+    rawOrder: {
       type: Number,
       default: 0
     }
   },
   computed: {
+    compOrder() {
+      console.log(Math.abs(this.rawOrder));
+      return Math.abs(this.rawOrder);
+    },
     imgLeft() {
-      return this.order % 2 === 0
-    }
+      // encoding flip via negative values
+      return this.compOrder % 2 === (this.rawOrder < 0 ? 0 : 1);
+    },
   }
 }
 </script>
